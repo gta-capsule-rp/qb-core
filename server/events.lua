@@ -60,7 +60,7 @@ local function OnPlayerConnecting(name, setKickReason, deferrals)
     -- mandatory wait!
     Wait(2500)
 
-    deferrals.update(string.format('Hello %s. We are checking if you are banned.', name))
+    deferrals.update(string.format('Hello %s. We are validating your user data.', name))
 
     local isBanned, Reason = QBCore.Functions.IsPlayerBanned(player)
     local isLicenseAlreadyInUse = QBCore.Functions.IsLicenseInUse(license)
